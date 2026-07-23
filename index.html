@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skardu Travel Guide — Gateway to K2 and the Karakoram | Visit Skardu</title>
+<meta name="description" content="Plan your trip to Skardu, Pakistan: K2 base camp, Deosai Plains, Shangrila, Satpara Lake, Shigar Fort and the cold desert. Best seasons, routes, and travel tips.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Zilla+Slab:wght@400;500&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --night:#101B26;
+    --glacier:#4B7C93;
+    --sand:#C9A467;
+    --apricot:#E2795C;
+    --paper:#EFE9DC;
+    --gold:#D4A24C;
+    --ink:#1B2530;
+    --line:rgba(16,27,38,0.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Manrope',sans-serif;
+    line-height:1.65;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{font-family:'Fraunces',serif;font-weight:500;letter-spacing:-0.01em;}
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:0.72rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--glacier);
+  }
+  a{color:inherit;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 6vw;}
+
+  /* NAV */
+  nav{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:1.4rem 6vw;
+    mix-blend-mode:difference;
+    color:#fff;
+  }
+  nav .logo{font-family:'Fraunces',serif;font-size:1.1rem;letter-spacing:0.02em;}
+  nav ul{list-style:none;display:flex;gap:2rem;font-size:0.85rem;}
+  nav a{text-decoration:none;opacity:0.85;}
+  nav a:hover{opacity:1;}
+
+  /* HERO */
+  .hero{
+    position:relative;
+    height:100vh;
+    min-height:640px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+    background:linear-gradient(180deg,#0B1420 0%, #16273A 38%, #3E5A6E 68%, #C98B5E 92%, #E7B27B 100%);
+    color:#fff;
+    overflow:hidden;
+  }
+  .hero svg{position:absolute;bottom:0;left:0;width:100%;height:auto;display:block;}
+  .hero-content{position:relative;z-index:5;padding:0 6vw 5.5rem;max-width:760px;}
+  .hero h1{font-size:clamp(2.4rem,5.6vw,4.4rem);line-height:1.04;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,0.25);}
+  .hero p{margin-top:1.3rem;font-size:1.08rem;max-width:520px;color:rgba(255,255,255,0.88);}
+  .stars{position:absolute;top:0;left:0;width:100%;height:55%;}
+  .cta{
+    display:inline-flex;align-items:center;gap:0.5rem;
+    margin-top:2rem;
+    padding:0.85rem 1.6rem;
+    background:var(--apricot);
+    color:#fff;
+    text-decoration:none;
+    border-radius:2px;
+    font-size:0.92rem;
+    font-weight:500;
+    transition:transform 0.2s ease, background 0.2s ease;
+  }
+  .cta:hover{background:#C9613F;transform:translateY(-2px);}
+  .cta.ghost{background:transparent;border:1px solid rgba(255,255,255,0.5);margin-left:0.75rem;}
+  .cta.ghost:hover{background:rgba(255,255,255,0.12);}
+
+  /* RIDGE DIVIDER — signature element */
+  .ridge{width:100%;height:46px;display:block;}
+  .ridge path{fill:none;stroke:var(--line);stroke-width:1;}
+
+  section{padding:5.5rem 0;position:relative;}
+  section h2{font-size:clamp(1.7rem,3vw,2.4rem);margin-top:0.6rem;max-width:600px;}
+  .lede{max-width:640px;font-size:1.02rem;color:#3A4550;margin-top:1.1rem;}
+
+  /* INTRO */
+  .intro-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:3rem;margin-top:2.5rem;align-items:start;}
+  .intro-grid p{color:#3A4550;margin-bottom:1rem;font-size:1rem;}
+  .stat-col{border-left:1px solid var(--line);padding-left:2rem;}
+  .stat{padding:1rem 0;border-bottom:1px solid var(--line);}
+  .stat:first-child{padding-top:0;}
+  .stat .num{font-family:'Fraunces',serif;font-size:1.9rem;color:var(--night);}
+  .stat .lab{font-size:0.82rem;color:#5B655E;margin-top:0.15rem;}
+
+  /* HIGHLIGHTS */
+  .highlights{background:var(--night);color:#EFE9DC;}
+  .highlights .eyebrow{color:var(--sand);}
+  .highlights h2{color:#fff;}
+  .highlights .lede{color:rgba(239,233,220,0.72);}
+  .card-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:3rem;background:rgba(239,233,220,0.14);}
+  .card{background:var(--night);padding:2rem 1.7rem;min-height:230px;display:flex;flex-direction:column;}
+  .card svg{width:34px;height:34px;margin-bottom:1.1rem;}
+  .card h3{font-size:1.1rem;color:#fff;font-weight:500;}
+  .card p{font-size:0.9rem;color:rgba(239,233,220,0.68);margin-top:0.6rem;}
+
+  /* SEASONS */
+  .season-row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:3rem;border-top:1px solid var(--line);}
+  .season{padding:1.6rem 1.4rem 0 0;border-right:1px solid var(--line);}
+  .season:last-child{border-right:none;}
+  .season .eyebrow{color:var(--apricot);}
+  .season h3{font-family:'Fraunces',serif;font-weight:500;font-size:1.25rem;margin-top:0.4rem;}
+  .season p{font-size:0.88rem;color:#3A4550;margin-top:0.6rem;}
+
+  /* GETTING THERE */
+  .reach{display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-top:2.5rem;}
+  .reach-item{padding-top:1.5rem;border-top:1px solid var(--line);}
+  .reach-item h3{font-family:'Fraunces',serif;font-weight:500;font-size:1.2rem;}
+  .reach-item p{color:#3A4550;font-size:0.96rem;margin-top:0.6rem;}
+
+  /* CLOSING */
+  .closing{
+    background:linear-gradient(180deg,#16273A, #0B1420);
+    color:#fff;
+    text-align:center;
+    padding:6rem 0;
+  }
+  .closing h2{color:#fff;margin:0 auto;max-width:560px;}
+  .closing .lede{color:rgba(239,233,220,0.7);margin-left:auto;margin-right:auto;}
+  .closing .cta{margin-top:2.2rem;}
+
+  footer{padding:2.2rem 6vw;display:flex;justify-content:space-between;font-size:0.78rem;color:#5B655E;background:var(--night);color:rgba(239,233,220,0.5);}
+
+  @media (max-width:800px){
+    nav ul{display:none;}
+    .intro-grid{grid-template-columns:1fr;}
+    .stat-col{border-left:none;padding-left:0;border-top:1px solid var(--line);padding-top:1.5rem;}
+    .card-grid{grid-template-columns:1fr;}
+    .season-row{grid-template-columns:1fr 1fr;row-gap:2rem;}
+    .season{border-right:none;}
+    .reach{grid-template-columns:1fr;}
+  }
+  @media (prefers-reduced-motion:reduce){
+    html{scroll-behavior:auto;}
+    .cta{transition:none;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Skardu</div>
+  <ul>
+    <li><a href="#about">The Valley</a></li>
+    <li><a href="#highlights">Places</a></li>
+    <li><a href="#seasons">When to Go</a></li>
+    <li><a href="#reach">Getting There</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <svg class="stars" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true">
+    <circle cx="80" cy="40" r="1.4" fill="#fff" opacity="0.7"/>
+    <circle cx="220" cy="90" r="1" fill="#fff" opacity="0.5"/>
+    <circle cx="410" cy="30" r="1.6" fill="#fff" opacity="0.8"/>
+    <circle cx="600" cy="70" r="1" fill="#fff" opacity="0.4"/>
+    <circle cx="740" cy="20" r="1.3" fill="#fff" opacity="0.6"/>
+    <circle cx="900" cy="60" r="1" fill="#fff" opacity="0.5"/>
+    <circle cx="150" cy="150" r="1" fill="#fff" opacity="0.4"/>
+    <circle cx="960" cy="140" r="1.2" fill="#fff" opacity="0.5"/>
+  </svg>
+  <svg viewBox="0 0 1200 420" preserveAspectRatio="none" aria-hidden="true">
+    <polygon points="0,420 0,220 150,150 260,240 360,120 480,260 600,80 640,150 760,190 900,110 1020,230 1120,170 1200,240 1200,420" fill="#0E1D2B" opacity="0.9"/>
+    <polygon points="0,420 0,300 180,260 320,340 420,220 560,320 680,250 800,330 920,240 1050,320 1200,280 1200,420" fill="#0A1620"/>
+    <polygon points="480,260 600,80 640,150 560,260" fill="#16293A"/>
+  </svg>
+  <div class="hero-content">
+    <p class="eyebrow">Gilgit-Baltistan, Pakistan</p>
+    <h1>Skardu — where the Karakoram touches the sky</h1>
+    <p>Gateway to K2, the Deosai Plains, and a valley of turquoise lakes and Balti forts. Everything you need to plan a first trip to Skardu, from routes to the right season to go.</p>
+   <a class="cta" href="https://ilyasskardutravelsandtours.com/">Skardu Travel</a>
+<a class="cta ghost" href="https://ilyasskardutravelsandtours.com/">Skardu Travel</a>
+    <a class="cta ghost" href="#reach">Getting there</a>
+  </div>
+</header>
+
+<section id="about" class="wrap">
+  <p class="eyebrow">Northern Pakistan</p>
+  <h2>A valley built between giants</h2>
+  <div class="intro-grid">
+    <div>
+      <p>Skardu sits at the confluence of the Indus and Shigar rivers, ringed by some of the highest mountains on Earth. It is the last proper town before the Karakoram opens into glacier and rock, which is why almost every serious expedition into the range, K2 included, begins its final approach here.</p>
+      <p>The town itself is easy to underestimate. Its real character shows in the valley around it: apricot orchards climbing the hillsides, Balti forts built by a line of local rulers, and rivers running a pale, glacial green. Skardu is also the practical hinge for the whole region, the place travelers restock, arrange permits, and pick up a jeep before heading further into Shigar, Khaplu, or the Deosai plateau.</p>
+      <p>What draws people back is the range of it. In a single week you can stand on a cold desert dune, float across a lake ringed by pine forest, and sleep at the edge of a plateau grazed by brown bears. Few places in Pakistan compress that much landscape into so short a drive.</p>
+    </div>
+    <div class="stat-col">
+      <div class="stat"><div class="num">2,228 m</div><div class="lab">Elevation of Skardu town</div></div>
+      <div class="stat"><div class="num">4</div><div class="lab">Eight-thousand-metre peaks within reach</div></div>
+      <div class="stat"><div class="num">14–16 hrs</div><div class="lab">Drive from Islamabad via the KKH</div></div>
+      <div class="stat"><div class="num">4,114 m</div><div class="lab">Average height of the Deosai plateau</div></div>
+    </div>
+  </div>
+</section>
+
+<svg class="ridge" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 L120,15 220,34 340,8 460,30 580,4 700,26 820,12 940,32 1060,10 1200,28"/></svg>
+
+<section id="highlights" class="highlights">
+  <div class="wrap">
+    <p class="eyebrow">Where to go</p>
+    <h2>Six places worth the drive</h2>
+    <p class="lede">Skardu's attractions are spread across a wide valley, so most visitors base themselves in town and take day trips out to lakes, forts, and the plateau.</p>
+    <div class="card-grid">
+      <div class="card">
+        <svg viewBox="0 0 40 40"><path d="M2,32 L12,14 18,24 24,10 38,32 Z" fill="none" stroke="#C9A467" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        <h3>K2 base camp trek</h3>
+        <p>The classic route into the Karakoram, following the Baltoro glacier past Concordia, where four of the world's fourteen highest peaks meet in one amphitheater of ice.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 40 40"><ellipse cx="20" cy="26" rx="16" ry="7" fill="none" stroke="#C9A467" stroke-width="1.6"/><path d="M10,20 Q20,10 30,20" fill="none" stroke="#C9A467" stroke-width="1.4"/></svg>
+        <h3>Deosai National Park</h3>
+        <p>The second-highest plateau in the world, open only in summer. Wide grassland, brown bears, and wildflowers stretching to the horizon.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 40 40"><ellipse cx="20" cy="22" rx="15" ry="10" fill="none" stroke="#C9A467" stroke-width="1.6"/><path d="M6,22 Q20,12 34,22" fill="none" stroke="#C9A467" stroke-width="1.2"/></svg>
+        <h3>Shangrila and Lower Kachura Lake</h3>
+        <p>A pine-fringed lake often called Lower Kachura, with water so still it mirrors the surrounding cliffs. A short, easy trip from town.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 40 40"><rect x="10" y="14" width="20" height="18" fill="none" stroke="#C9A467" stroke-width="1.6"/><path d="M10,14 L20,6 30,14" fill="none" stroke="#C9A467" stroke-width="1.6"/></svg>
+        <h3>Shigar and Khaplu forts</h3>
+        <p>Restored royal residences of the old Balti kingdoms, built from timber and stone, now working heritage guesthouses set among orchards.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 40 40"><path d="M4,28 Q14,18 20,28 Q26,18 36,28" fill="none" stroke="#C9A467" stroke-width="1.6"/></svg>
+        <h3>Satpara Lake</h3>
+        <p>A glacial reservoir just outside town, backed by bare granite peaks, popular for boating and as the launch point toward Deosai.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 40 40"><path d="M2,30 Q10,20 18,28 Q26,18 38,30" fill="none" stroke="#C9A467" stroke-width="1.6"/><circle cx="30" cy="12" r="4" fill="none" stroke="#C9A467" stroke-width="1.3"/></svg>
+        <h3>Skardu cold desert</h3>
+        <p>Sand dunes on the banks of the Indus, framed by snow peaks, an odd and photogenic contrast unique to this stretch of the valley.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="seasons" class="wrap">
+  <p class="eyebrow">Planning</p>
+  <h2>The valley changes with the season</h2>
+  <p class="lede">Skardu is a year-round destination, but what you can reach depends heavily on when you go.</p>
+  <div class="season-row">
+    <div class="season">
+      <p class="eyebrow">March – April</p>
+      <h3>Spring</h3>
+      <p>Apricot and cherry blossoms cover the lower valley and orchard villages, with mild days and cool nights before the trekking season begins.</p>
+    </div>
+    <div class="season">
+      <p class="eyebrow">June – August</p>
+      <h3>Summer</h3>
+      <p>Peak season. Deosai opens once the snow clears, K2 base camp treks run, and roads to Shigar and Khaplu are at their most reliable.</p>
+    </div>
+    <div class="season">
+      <p class="eyebrow">September – October</p>
+      <h3>Autumn</h3>
+      <p>Poplar and willow trees turn gold against the grey rock, days stay clear, and the summer crowds thin out considerably.</p>
+    </div>
+    <div class="season">
+      <p class="eyebrow">November – February</p>
+      <h3>Winter</h3>
+      <p>Snow closes the high passes and Deosai, but Skardu town stays accessible by air, offering a quiet, low-cost look at the valley.</p>
+    </div>
+  </div>
+</section>
+
+<svg class="ridge" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 L120,15 220,34 340,8 460,30 580,4 700,26 820,12 940,32 1060,10 1200,28"/></svg>
+
+<section id="reach" class="wrap">
+  <p class="eyebrow">Logistics</p>
+  <h2>Getting to Skardu</h2>
+  <div class="reach">
+    <div class="reach-item">
+      <h3>By air</h3>
+      <p>Daily flights connect Islamabad to Skardu Airport in about 55 minutes, weather permitting. Morning flights are more reliable, since clouds tend to build over the mountains by early afternoon. This is the fastest and most common way in.</p>
+    </div>
+    <div class="reach-item">
+      <h3>By road</h3>
+      <p>The overland route follows the Karakoram Highway through Chilas and along the Indus, roughly 14 to 16 hours from Islamabad. It's a longer trip, but it passes Nanga Parbat viewpoints and pairs naturally with a stop in Hunza on the way north.</p>
+    </div>
+    <div class="reach-item">
+      <h3>Getting around locally</h3>
+      <p>Hired jeeps and local guides are the standard way to reach Deosai, Shigar, and Khaplu, since public transport is limited and several routes need 4x4 vehicles, particularly after rain or snowmelt.</p>
+    </div>
+    <div class="reach-item">
+      <h3>Where to stay</h3>
+      <p>Skardu town has guesthouses and hotels across a range of budgets, while Shigar and Khaplu forts offer heritage stays for travelers who want to base further out in the valley.</p>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--sand)">Start planning</p>
+    <h2>Skardu rewards the travelers who give it time</h2>
+    <p class="lede">A short visit covers the lakes and forts near town. A longer one opens up Deosai, the cold desert, and the road toward K2 itself.</p>
+    <a class="cta" href="#about">Begin your route</a>
+  </div>
+</section>
+
+<footer>
+  <span>Skardu, Gilgit-Baltistan</span>
+  <span>A traveler's guide to the Karakoram</span>
+</footer>
+
+</body>
+</html>
